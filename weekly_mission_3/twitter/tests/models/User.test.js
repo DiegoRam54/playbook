@@ -20,8 +20,8 @@ describe("Unit Test for User class", () => {
     test('Add setters', () => {
         const user=new User(1, "DiegoRam", "Diego", "Bio");
         user.setUserName = "Ram"
-        expect(user.setUserName).toBe("Ram");
+        expect(user.userName).toBe("Ram");
         user.setBio = "New Bio"
-        expect(user.setBio).toBe("New Bio");
+        expect(user.bio).toBe("New Bio");
     });
 });
