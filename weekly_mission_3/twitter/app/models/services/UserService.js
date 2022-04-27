@@ -12,7 +12,14 @@ class UserService{
         return array;
     }
     static updateUserName(getUser, getNewUserName){
-
+        getUser.userName = getNewUserName;
+    }
+    static getAllUserNames(getArray){
+        let array=new Array();
+        for (let i=0; i<3; i++) {
+            array[i]=getArray[i].userName;
+        }
+        return array;
     }
 }
 module.exports = UserService;
